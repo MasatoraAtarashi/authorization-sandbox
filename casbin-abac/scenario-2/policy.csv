@@ -1,0 +1,3 @@
+p, doctor, /patient/{patient_id}/record, *, "is_assigned_patient(r.user.ID, r.obj.ID)"
+p, doctor, /patient/{patient_id}/record/*, *, "is_assigned_patient(r.user.ID, r.obj.ID)"
+p, nurse, /patient/{patient_id}/record/summary, GET, working_hours()
