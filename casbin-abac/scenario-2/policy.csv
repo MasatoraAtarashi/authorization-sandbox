@@ -1,3 +1,6 @@
-p, doctor, /patient/{patient_id}/record, *, "is_assigned_patient(r.user.ID, r.obj.ID)"
-p, doctor, /patient/{patient_id}/record/*, *, "is_assigned_patient(r.user.ID, r.obj.ID)"
-p, nurse, /patient/{patient_id}/record/summary, GET, working_hours()
+p, admin, *, *, true, allow
+p, doctor, /admin/*, *, true, deny
+p, nurse, /admin/*, *, true, deny
+p, doctor, /patient/{patient_id}/record, *, "is_assigned_patient(r.user.ID, r.obj.ID)", allow
+p, doctor, /patient/{patient_id}/record/*, *, "is_assigned_patient(r.user.ID, r.obj.ID)", allow
+p, nurse, /patient/{patient_id}/record/summary, GET, working_hours(), allow

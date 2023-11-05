@@ -42,6 +42,11 @@ func main() {
 	})
 
 	e.Use(authorize)
+	adminApi := e.Group("/admin")
+	adminApi.GET("/user/list", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Access Allowed\n\n")
+	})
+
 	e.GET("/patient/:patient_id/record", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Access Allowed\n\n")
 	})
@@ -86,6 +91,7 @@ type Object struct {
 
 func getUserByName(name string) (*User, error) {
 	users := []User{
+		{ID: "0", Role: "admin"},
 		{ID: "1", Role: "doctor"},
 		{ID: "2", Role: "nurse"},
 		{ID: "3", Role: "family"},
