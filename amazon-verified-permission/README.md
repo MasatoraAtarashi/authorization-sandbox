@@ -1,0 +1,13 @@
+## 参考資料
+- https://aws.amazon.com/jp/verified-permissions/
+- https://aws.amazon.com/jp/verified-permissions/faqs/
+- [workshop](https://catalog.workshops.aws/verified-permissions-in-action/en-US)
+- https://aws.amazon.com/jp/blogs/news/simplify-how-you-manage-authorization-in-your-applications-with-amazon-verified-permissions-now-generally-available/
+- https://tech.isid.co.jp/entry/verified_permissions_and_cdk
+- https://docs.cedarpolicy.com/
+- https://zenn.dev/manaty226/articles/6be86d9f878940
+- https://zenn.dev/ncdc/articles/72cfc6f17a67a9
+- https://dev.classmethod.jp/articles/amazon-verified-permissions-ga/
+- https://dev.classmethod.jp/articles/reinvent2022-sec335-report/
+- https://dev.classmethod.jp/articles/amazon-verified-permissions-start/
+- https://zenn.dev/ibaraki/scraps/e6ac8a2f540436
