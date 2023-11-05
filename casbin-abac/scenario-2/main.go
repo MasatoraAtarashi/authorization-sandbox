@@ -20,6 +20,8 @@ func main() {
 		panic(err)
 	}
 
+	enforcer.EnableLog(true)
+
 	enforcer.AddFunction("working_hours", func(args ...interface{}) (interface{}, error) {
 		now := time.Now()
 		workingStart := 9

@@ -2,7 +2,7 @@
 
 run:
 	@echo "Starting the server..."
-	@go run main.go
+	@go run main.go logger.go
 
 test: test-admin test-doctor test-nurse test-family
 
