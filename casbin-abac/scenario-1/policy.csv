@@ -1,1 +1,1 @@
-p, r.sub.Age > 18, *, *
+p, r.sub.Age >= 18, *, *
